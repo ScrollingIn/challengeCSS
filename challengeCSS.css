@@ -1,0 +1,132 @@
+html {
+    font-family: "poppins";
+}
+.header {
+    background-color: white;
+    margin: -10px;
+}
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: #3A3737;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.menubar {
+    height: 50px;
+    background: #3A3737;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.menu-button {
+    height: 35px;
+    padding: 5px;
+    margin: 10px;
+    background: #3A3737;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+}
+
+.menu-button:hover {
+    background-color: #302E2E;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    flex-direction: column;
+    background-color: white;
+}
+
+.menu {
+    margin-left: 10px;
+}
+
+.article1 {
+    border: solid 10px lightgray;
+    background-color: white;
+    margin-left: -7px;
+    margin-right: -10px;
+    padding: 15px;
+}
+
+.art1p1 {
+    font-size: 25px;
+    margin: 0px;
+}
+
+.art1p2 {
+    font-size: 10px;
+    color: lightgray;
+}
+
+.article2 {
+    border: solid 10px lightgray;
+    background-color: white;
+    margin-top: -10px;
+    margin-left: -7px;
+    margin-right: -10px;
+    padding: 15px;
+}
+
+.button {
+    background-color: rgb(240,15,45);
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+button a:hover {
+    color: white;
+    background-color: rgb(223,6,37);
+}
+button a:link {
+    color: white;
+    background-color: rgb(223,6,37)
+}
+button a:active{
+    color: white;
+    background-color: rgb(223,6,37);
+}
+button a:visited{
+    color: white;
+    background-color: rgb(223,6,37);
+}
+
+.folder1 {
+    display: flex;
+    flex-direction: row;
+    color: lightgray;
+    font-size: 10px;
+    align-items: center;
+}
+
+.img1 {
+    margin-right: 5px;
+    margin-top: -5px;
+    width: 5%;
+    height: 5%;
+}

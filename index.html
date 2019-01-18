@@ -15,18 +15,29 @@
         <h1>Challenge</h1>
         <h5>Effe bikkelen op een mooie website</h5>
     </div>
-    <div class="menubar">
-        <div class="menu-button">
-            <div class="bars">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-            <div class="menu"><p>Menu</p></div>
+    <div class="collapsible-menu">
+        <div class="bars">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <input type="checkbox" id="menu">
+        <label for="menu">Menu</label>
+        <div class="menu-content">
+            <ul>
+                <li class="hr"><hr></li>
+                <li class="text"><a href="#">Home</a></li>
+                <li class="hr"><hr></li>
+                <li class="text"><a href="archeologie.html">Archeologie</a></li>
+                <li class="hr"><hr></li>
+                <li class="text"><a href="backpacking.html">Backpacking</a></li>
+                <li class="hr"><hr></li>
+                <li class="text"><a href="#">Bergbeklimmen</a></li>
+            </ul>
         </div>
     </div>
     <div class="style1">
-        <p class="art1p1">Tis weer lente</p>
+        <a href="" class="art1p1" id="lente">Tis weer lente</a>
         <p class="art1p2">Geplaatst op 17 Januari 2019 door Malina</p>
         <p>Anders har akkurat vært i dusjen. Først tørker han seg med
             et håndkle. Han tørker hele kroppen godt. Anders tar på seg
@@ -34,7 +45,7 @@
             på seg shorts. Nå mangler Anders bare sokker. Han tar først
             en sokk på sitt høyre ben, deretter en sokk på sitt venstre
             ben. Nå er Anders klar for å spise frokost.</p>
-        <button class="button">Verder lezen</button>
+        <button class="button"><a href="tisWeerLente.html">Verder lezen</a></button>
         <hr style="color: lightgray;">
         <div class="folder1">
             <img class="img1" src="images/foldericon.png">
@@ -42,7 +53,7 @@
         </div>
     </div>
     <div class="style2">
-        <p class="art1p1">Verder kijken</p>
+        <a href="verderkijken.html" class="art1p1" id="nieuws">Verder kijken</a>
         <p class="art1p2">Geplaatst op 17 Januari 2019 door Malina</p>
         <p>Klokka er elleve og Andreas går og legger seg.
             Han er ikke særlig trøtt, men han skal tidlig opp i morgen.
@@ -51,7 +62,7 @@
             Når han har kommet til soverommet kler han av seg til bare underbuksa.
             Han skrur av lyset og legger seg under dyna.
             Det går 20(tjue) minutter og Andreas sovner.</p>
-        <button class="button">Verder lezen</button>
+        <button class="button"><a href="verderkijken.html">Verder lezen</a></button>
         <hr>
         <div class="folder1">
             <img class="img1" src="images/foldericon.png">
@@ -59,7 +70,7 @@
         </div>
     </div>
     <div class="style2">
-        <p class="art1p1">Backpacking</p>
+        <a href="backpacking.html" class="art1p1" id="backpacking">Backpacking</a>
         <p class="art1p2">Geplaatst op 17 Januari 2019 door Malina</p>
         <p>Petter leser bok
 
@@ -70,7 +81,7 @@
             Etter at han er ferdig med en side, blar han om til den neste.
             Når han er ferdig med å lese, har han brukt tjue minutter og kommet tjue sider fram i boka.
         </p>
-        <button class="button">Verder lezen</button>
+        <button class="button"><a href="backpacking.html">Verder lezen</a></button>
         <hr>
         <div class="folder1">
             <img class="img1" src="images/foldericon.png">
@@ -78,7 +89,7 @@
         </div>
     </div>
     <div class="style2">
-        <p class="art1p1">Wildcamperen</p>
+        <a href="wildcamperen.html" class="art1p1" id="Wildcamperen">Wildcamperen</a>
         <p class="art1p2">Geplaatst op 17 Januari 2019 door Malina</p>
         <p>Jørgen har akkurat kommet hjem fra jobb.
             Han jobber som elektriker, og er derfor skitten på hendene sine etter jobb.
@@ -103,17 +114,22 @@
     <div class="style3">
         <p>Laatste berichten</p>
         <div class="list">
-            <p>Tis weer lente</p>
-            <p>Verder kijken</p>
-            <p>Backpacking</p>
-            <p>Wildcamperen</p>
+            <a href="tisWeerLente.html">Tis weer lente</a>
+            <br>
+            <a href="verderkijken.html">Verder kijken</a>
+            <br>
+            <a href="#backpacking">Backpacking</a>
+            <br>
+            <a href="wildcamperen.html">Wildcamperen</a>
+            <br>
         </div>
     </div>
     <div class="style3">
         <p>Dieren in het nieuws</p>
         <div class="list">
-            <p>In het nieuws</p>
-            <p>lenteberichten</p>
+            <a href="">In het nieuws</a>
+            <br>
+            <a href="">lenteberichten</a>
         </div>
     </div>
 </div>

@@ -122,74 +122,139 @@ a {
     width: 5%;
     height: 5%;
 }
-
-.menu-content {
-    font-family: poppins;
-    color: white;
-    padding: 0 0 0 50px;
-    margin-left: -10px;
-}
-
-.bars {
-    position: absolute;
-    margin-left: -30px;
-    margin-top: 2px;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    margin-top: 6px;
-    margin-bottom: 6px;
-    flex-direction: column;
-    background-color: white;
-}
-
-.collapsible-menu {
-    background-color: #3A3737;
-    color: white;
-    padding: 0px 40px;
-    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
-    margin-left: -10px;
-    margin-right: -10px;
-}
-
-.collapsible-menu ul {
-    list-style-type: none;
+* {
+    /* border: solid 1px red; */
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.collapsible-menu a {
-    display:block;
-    padding: 10px;
-    text-decoration: none;
+.menu {
+
+    margin-top: 10px;
+    background-color: #3a3737;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 0;
+    margin-bottom: 1em;
 }
 
-
-.collapsible-menu label {
-    font-family: poppins;
-    background-color: #3A3737;
+.menu>label {
     display: block;
-    cursor: pointer;
-    background: url(menu.png) no-repeat left center;
-    padding: 10px 0 10px 10px;
+    background: url(https://cdn.discordapp.com/attachments/456047468485017600/535626591447810097/unknown.png) no-repeat left center;
+    padding: 10px 0 10px 60px;
 }
 
-input#menu {
+.menu>label:hover {
+    background: url(https://cdn.discordapp.com/attachments/456047468485017600/535626586938933248/composite.png) no-repeat left center;
+    color: #BBB;
+}
+
+.menu>#checkbox {
     display: none;
 }
 
-
-.menu-content {
+.sub-menu {
+    overflow:hidden;
     max-height: 0;
-    overflow: hidden;
-    font-family: poppins;
+    display: block;
+    margin: 0;
+    background-color: #3a3737;
+    transition:max-height 0.5s ease-out;
+}
 
+
+
+.sub-menu>li {
+    display: block;
+    vertical-align: middle;
+    margin: 0;
+    /* border: solid 1.5px #ded; */
+}
+
+.sub-menu>li>a {
+    display: block;
+    padding: 1em;
     color: white;
+    text-decoration:none;
 }
-.hr {
-   margin-left: -40px;
+.sub-menu>li>a:hover {
+    color: #BBB;
 }
+
+.menu>input:checked+.sub-menu {
+    max-height:300px;
+    transition:max-height 0.5s ease-in;
+}
+
+
+/*.menu-content {*/
+    /*font-family: poppins;*/
+    /*color: white;*/
+    /*padding: 0 0 0 50px;*/
+    /*margin-left: -10px;*/
+/*}*/
+
+/*.bars {*/
+    /*position: absolute;*/
+    /*margin-left: -30px;*/
+    /*margin-top: 2px;*/
+/*}*/
+
+/*.bar1, .bar2, .bar3 {*/
+    /*width: 35px;*/
+    /*height: 5px;*/
+    /*margin-top: 6px;*/
+    /*margin-bottom: 6px;*/
+    /*flex-direction: column;*/
+    /*background-color: white;*/
+/*}*/
+
+/*.collapsible-menu {*/
+    /*background-color: #3A3737;*/
+    /*color: white;*/
+    /*padding: 0px 40px;*/
+    /*box-shadow: 1px 2px 3px rgba(0,0,0,0.2);*/
+    /*margin-left: -10px;*/
+    /*margin-right: -10px;*/
+/*}*/
+
+/*.collapsible-menu ul {*/
+    /*list-style-type: none;*/
+    /*padding: 0;*/
+/*}*/
+
+/*.collapsible-menu a {*/
+    /*display:block;*/
+    /*padding: 10px;*/
+    /*text-decoration: none;*/
+/*}*/
+
+
+/*.collapsible-menu label {*/
+    /*font-family: poppins;*/
+    /*background-color: #3A3737;*/
+    /*display: block;*/
+    /*cursor: pointer;*/
+    /*background: url(menu.png) no-repeat left center;*/
+    /*padding: 10px 0 10px 10px;*/
+/*}*/
+
+/*input#menu {*/
+    /*display: none;*/
+/*}*/
+
+
+/*.menu-content {*/
+    /*max-height: 0;*/
+    /*overflow: hidden;*/
+    /*font-family: poppins;*/
+
+    /*color: white;*/
+/*}*/
+/*.hr {*/
+   /*margin-left: -40px;*/
+/*}*/
 
 .text{
     margin-left:-60px;
@@ -258,4 +323,10 @@ button a:active {
     height: 50px;
     margin-left: -10px;
     margin-right: -10px;
+}
+@media only screen and (min-width: 760px){
+    img.img1 {
+        width: 3%;
+    }
+
 }

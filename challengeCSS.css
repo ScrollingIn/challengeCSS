@@ -252,3 +252,10 @@ button a:active {
     text-decoration: none;
     background-color: transparent;
 }
+
+.footer {
+    background-color: #3A3737;
+    height: 50px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
